@@ -1,234 +1,187 @@
-# Machine-Learning-Engineering-with-Python-Second-Edition
+# 머신러닝 엔지니어링 with 파이썬
 
-This is the code repository for the [Second Edition of Machine Learning Engineering with Python](https://www.packtpub.com/product/machine-learning-engineering-with-python-second-edition/9781837631964), published by Packt.
+**ML옵스를 활용한 실용적 예제로 머신러닝 모델의 프로덕션 수명주기 관리하기**
 
-More details are below, pick up [your copy](https://a.co/d/8EQvHH2) today!
+## 책 소개
+《머신러닝 엔지니어링 with 파이썬》은 ML옵스와 ML 엔지니어가 실제 문제에 대한 해결책을 구축하는 데 필요한 실용적인 안내서다. 이 책은 빠르게 발전하는 이 분야에서 앞서 나가는 데 필요한 기술을 제공한다.
 
-**Manage the production life cycle of machine learning models using MLOps with practical examples**
+이 책은 예제 기반 접근법을 통해 기술을 개발하는 데 도움을 주며, 필요한 기술적 개념, 구현 패턴 및 개발 방법론을 다룬다. ML 개발 수명주기의 주요 단계를 탐색하고 모델 훈련 및 재훈련을 위한 표준화된 ‘모델 팩토리’를 만드는 방법을 배운다. CI/CD 개념을 활용하고 다양한 유형의 드리프트를 감지하는 방법도 배운다.
 
-The author of this book is - [Andrew Peter McMahon](https://www.linkedin.com/in/andrew-p-mcmahon/)
+최신 배포 아키텍처를 실습하고 솔루션 확장 방법을 배운다. 이 책은 최신 오픈소스 및 클라우드 기반 기술에 중점을 두고 ML 엔지니어링과 ML옵스의 모든 측면을 깊이 다룬다. 여기에는 고급 파이프라인 및 오케스트레이션 기법에 대한 완전히 새로운 접근 방식이 포함되어 있다.
 
-## About the book
-The Second Edition of Machine Learning Engineering with Python is the practical guide that MLOps and ML engineers need to build solutions to real-world problems. It will provide you with the skills you need to stay ahead in this rapidly evolving field.
-The book takes an examples-based approach to help you develop your skills and covers the technical concepts, implementation patterns, and development methodologies you need. You'll explore the key steps of the ML development lifecycle and create your own standardized "model factory" for training and retraining models. You'll learn to employ concepts like CI/CD and how to detect different types of drift.
-Get hands-on with the latest in deployment architectures and discover methods for scaling up your solutions. This edition goes deeper into all aspects of ML engineering and MLOps, with an emphasis on the latest open-source and cloud-based technologies. This includes a completely revamped approach to advanced pipelining and orchestration techniques.
-With a new chapter on deep learning, generative AI, and LLMOps, you will learn to use tools like LangChain, PyTorch, and Hugging Face to leverage LLMs for supercharged analysis. You will explore AI assistants like GitHub Copilot to become more productive, then dive deep into the engineering considerations of working with deep learning.
+딥러닝, 생성형 AI 및 LLM옵스에 대한 장에서는 랭체인, 파이토치, 허깅 페이스와 같은 도구를 사용하여 LLM을 활용한 강력한 분석 방법을 배운다. 깃허브 코파일럿과 같은 AI 비서를 활용해 생산성을 높이는 방법을 배우고, 딥러닝 작업의 엔지니어링 고려사항을 심층적으로 살펴본다.
 
+## 주요 특징
+- ML 개발 프로젝트의 엔드투엔드 계획 및 관리
+- 딥러닝, LLM, LLM옵스를 탐색하여 생성형 AI 활용
+- 파이썬을 사용하여 ML 도구를 패키징하고 솔루션 확장
+- 아파치 스파크, 쿠버네티스, 레이 활용
+- 아파치 에어플로, 젠ML, 쿠브플로로 ML 파이프라인 구축 및 실행
+- 드리프트 감지 및 솔루션에 재훈련 메커니즘 구축
+- 제어 흐름 및 취약점 스캐닝으로 오류 처리 개선
+- AWS에서 실행되는 ML 마이크로서비스 및 배치 프로세스 호스팅 및 구축
 
- 
-## Key Takeaways
-- Plan and manage end-to-end ML development projects
-- Explore deep learning, LLMs, and LLMOps to leverage generative AI
-- Use Python to package your ML tools and scale up your solutions
-- Get to grips with Apache Spark, Kubernetes, and Ray
-- Build and run ML pipelines with Apache Airflow, ZenML, and Kubeflow
-- Detect drift and build retraining mechanisms into your solutions
-- Improve error handling with control flows and vulnerability scanning
-- Host and build ML microservices and batch processes running on AWS
+## 개요 및 장별 요약
+이 책은 **머신러닝 엔지니어링**(MLE)과 **머신러닝 운영**(ML옵스)의 다양한 주제를 다루어 ML 솔루션을 엔지니어링하는 데 적용할 수 있는 도구, 기법 및 프로세스를 이해하는 데 도움을 준다. 핵심 개념을 소개하는 데 중점을 두어 향후 작업에서 이를 바탕으로 발전시킬 수 있도록 한다. 목표는 시간이 지나도 유효한 기본 원리와 폭넓은 이해를 개발하는 것이다. ML 팀 구성 방법부터 소프트웨어 개발 방법론과 모범 사례, 모델 구축 자동화, ML 코드 패키징, ML 파이프라인을 다양한 대상에 배포하는 방법, 대규모 배치 실행을 위한 워크로드 확장 방법까지 모든 내용을 다룬다. 또한 이번 제2판에서는 딥러닝과 생성형 AI에 머신러닝 엔지니어링과 ML옵스를 적용하는 흥미로운 세계를 새로운 장에서 다룬다. 여기에는 LLM을 사용한 솔루션 구축 시작 방법과 LLM옵스라는 새로운 분야가 포함된다. 오픈소스 도구 사용에 더 많은 중점을 두었지만, 많은 예제에서는 **아마존 웹 서비스**(AWS)의 서비스와 솔루션도 활용한다.
 
+《머신러닝 엔지니어링 with 파이썬》은 머신러닝을 프로덕션에 적용하는 과정에서 겪는 어려움을 해결하고, ML옵스를 프로젝트에 적용할 수 있는 자신감을 제공한다.
 
-## What's New
-This second edition goes deeper into ML engineering and MLOps to provide a solid foundation as well as hands-on examples. As well as covering traditional package managers, conda and pip, the second edition shows you how to manage complex dependencies with Poetry. You’ll go beyond creating general ML pipelines with Airflow by building advanced pipelines with ZenML and Kubeflow. The second edition introduces you to Ray, a Python native distributed computing framework, to help ML engineers meet the needs of massive data and massively scalable ML systems. There is a new chapter on **Large Language Models** (**LLMs**), generative AI, and **LLM Operations** (**LLMOps**), using PyTorch, Hugging Face, and GitHub Copilot and consume an LLM via an API using LangChain.
+1. [머신러닝 엔지니어링 소개](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter01)
+2. [머신러닝 개발 프로세스](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter02)
+3. [모델에서 모델 팩토리까지](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter03)
+4. [패키징](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter04)
+5. [배포 패턴과 도구](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter05)
+6. [스케일링](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter06)
+7. [딥러닝, 생성형 AI, LLM옵스](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter07)
+8. [예제 ML 마이크로서비스 구축](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter08)
+9. [ETML(추출, 변환, 머신러닝) 사례 연구](https://github.com/ychoi-kr/ml-engineering/tree/main/Chapter09)
 
+### 1장, 머신러닝 엔지니어링 소개
+1장은 ML 엔지니어링과 운영의 영역에 대한 포괄적인 소개를 제공한다. ML 엔지니어링과 ML옵스의 핵심 개념을 설명하고 ML의 역동적인 환경에서 이들의 중요성을 강조한다. 이 장은 ML 팀 내 역할을 자세히 설명하고 ML 엔지니어링과 ML옵스에 내재된 과제를 제시한다. 또한 모델링 기법과 기술 스택의 발전으로 인한 ML의 빠른 진화를 인정하고, 이 복잡한 분야를 효과적으로 탐색하기 위해 다양한 주제를 더 깊이 탐구할 필요성을 강조한다.
 
-## Outline and Chapter Summary
-The book covers a wide variety of **ML Engineering** (**MLE**) and **ML Operations** (**MLOps**) topics to help you understand the tools, techniques, and processes you can apply to engineer your ML solutions, with an emphasis on introducing the key concepts so that you can build on them in your future work. The aim is to develop fundamentals and a broad understanding that will stand the test of time. We cover everything from how to organize your ML team, to software development methodologies and best practices, to automating model building through to packaging your ML code, how to deploy your ML pipelines to a variety of different targets, and then how to scale your workloads for large batch runs. We also discuss, in an entirely new chapter for this second edition, the exciting world of applying ML engineering and MLOps to deep learning and generative AI, including how to start building solutions using LLMs and the new field of LLMOps. Although a far greater emphasis has been placed on using open-source tooling, many examples will also leverage services and solutions from **Amazon Web Services** (**AWS**). 
-Machine Learning Engineering with Python, Second Edition will help you to navigate the challenges of taking ML to production and give you the confidence to start applying MLOps in your projects. I hope you enjoy it!
+이 장의 주요 목표는 파이썬으로 프로덕션에 준비된 ML 시스템을 만들기 위한 필수 도구와 기술을 독자에게 제공하는 것이다. 프로젝트 관리, 파이썬 ML 패키지 개발, 재사용 가능한 훈련 및 모니터링 파이프라인 생성과 배포와 같은 기본 영역을 다룰 것을 약속한다. 또한 현대적인 도구, 배포 아키텍처, AWS 및 클라우드에 구애받지 않는 도구를 사용한 확장성에 대해 논의한다. 그리고 허깅 페이스와 OpenAI API를 통해 설명되는 트랜스포머와 LLM도 소개한다. 궁극적으로 이 장은 독자가 선택한 도구에 관계없이 ML 엔지니어링의 과제를 자신있게 다룰 수 있는 강력한 기반을 제공하고, ML 엔지니어링 분야에서 성공적인 경력을 위해 추가적인 탐구와 자기 학습을 장려한다.
 
+#### 주요 통찰:
+- **ML의 역동적 특성**: 이 장은 머신러닝 분야가 최근 몇 년 동안 크게 발전했음을 강조한다. 더 강력한 모델링 기법, 복잡한 기술 스택 및 새로운 프레임워크의 등장으로 ML 엔지니어링의 최신 동향과 도구를 계속 파악하는 것이 중요하다.
+- **ML 엔지니어링 기초**: 이 장은 ML 엔지니어링에서 강력한 기초를 구축하는 중요성을 강조한다. 프로젝트 관리, 파이썬 ML 패키지 개발, 훈련 및 모니터링 파이프라인 생성과 같이 책에서 다룰 핵심 주제를 소개한다. 이러한 기초는 프로덕션 준비된 ML 시스템을 구축하는 데 필수적이다.
+- **ML 팀의 역할**: ML 팀 내 다양한 역할에 대한 통찰을 제공하고 이러한 역할이 서로 어떻게 보완하는지 설명한다. 이러한 역할을 이해하는 것은 ML 프로젝트를 효과적으로 다룰 수 있는 잘 구성된 팀을 구성하는 데 필수적이다.
+- **실제 ML의 과제**: 실제 조직 내에서 ML 제품을 구축하는 과제에 대해 논의한다. 합리적으로 가치를 평가하고 이해관계자와 효과적으로 소통할 필요성을 강조하며, 기술적 능력 이상의 ML 엔지니어링의 실용적인 측면을 부각시킨다.
+- **고수준 시스템 설계**: 독자들에게 일반적인 비즈니스 문제를 위한 고수준 ML 시스템 설계 개념을 소개한다. 이는 이후 장에서 다룰 기술적 세부 사항의 기반을 마련하고 설계 관점에서 ML 솔루션이 어떻게 보여야 하는지에 대한 통찰을 제공한다.
+- **탐구 동기부여**: 이 장은 책의 내용에 참여하도록 독자들에게 동기를 부여하고 탐구와 자기 학습의 길을 권장한다. ML 엔지니어로서 성공적인 경력을 쌓기 위해서는 견고한 개념적 기초가 필수적임을 강조한다.
 
-1. [Introduction to ML Engineering](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter01)
-2. [The Machine Learning Development Process](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter02)
-3. [From Model to Model Factory](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter03)
-4. [Packaging Up](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter04)
-5. [Deployment Patterns and Tools](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter05)
-6. [Scaling Up](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter06)
-7. [Deep Learning, Generative AI, and LLMOps](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter07)
-8. [Building an Example ML Microservice](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter08)
-9. [Building an Extract, Transform, Machine Learning Use Case](https://github.com/PacktPublishing/Machine-Learning-Engineering-with-Python-Second-Edition/tree/main/Chapter09)
+### 2장, 머신러닝 개발 프로세스
+2장 ‘머신러닝 개발 프로세스’는 성공적인 ML 엔지니어링 프로젝트를 조직하고 실행하는 방법을 포괄적으로 탐구한다. 이 장은 애자일, 스크럼, CRISP-DM과 같은 다양한 개발 방법론을 논의하는 것으로 시작한다. 저자가 개발한 프로젝트 방법론을 소개하며, 이는 책 전체에서 참조된다. 또한 **지속적 통합/지속적 배포**(CI/CD)와 개발자 도구와 같은 필수 개념도 다룬다. 이 장의 중심 초점은 번영하는 ML 소프트웨어 엔지니어링 프로젝트를 위한 작업을 어떻게 나눌지 제시하는 것이며, 실제 ML 코드 예제와 함께 프로세스, 워크플로, 필요한 도구에 대한 통찰을 제공한다. 특히 저자가 제안한 '발견, 플레이, 개발, 배포'의 네 단계로 구성된 방법론에 중점을 두며, 이를 데이터 과학에서 인기 있는 CRISP-DM 방법론과 비교한다.
 
-### Chapter 01, Introduction to ML Engineering
-Chapter 1 of "Machine Learning Engineering with Python, Second Edition" provides a comprehensive introduction to the realm of ML engineering and operations. It begins by elucidating the core concepts of ML engineering and MLOps and underscores their importance in the dynamic landscape of ML. The chapter delves into the roles within ML teams and lays out the challenges inherent in ML engineering and MLOps. Moreover, it acknowledges the rapid evolution of ML, with advancements in modeling techniques and technology stacks, necessitating a more profound exploration of various topics to effectively navigate this complex field.
+이 장은 도구 설정, 버전 제어 전략, ML 프로젝트를 위한 CI/CD, ML 솔루션을 위한 잠재적 실행 환경에 대한 상세한 지침을 제공한다. 장이 끝날 무렵, 독자들은 파이썬 ML 엔지니어링 프로젝트를 준비하게 되며, 이는 후속 장의 기초가 된다. 또한 여기서 논의된 개념이 ML 프로젝트뿐만 아니라 다른 파이썬 소프트웨어 엔지니어링 노력에도 적용될 수 있음을 강조하여 제시된 지식의 다양성을 강조한다. 전반적으로 이 장은 ML 솔루션의 개발과 배포를 위한 강력한 기반을 확립하면서도 파이썬에서의 소프트웨어 엔지니어링 관행에 대한 더 넓은 관점을 제공한다.
 
-The chapter's primary goal is to equip readers with essential tools and techniques for creating production-ready ML systems in Python. It promises to cover fundamental areas like project management, Python ML package development, and the creation and deployment of reusable training and monitoring pipelines. In addition, it discusses modern tooling, deployment architectures, and scalability using AWS and cloud-agnostic tools. It also introduces readers to transformers and LLMs, exemplified through Hugging Face and OpenAI APIs. Ultimately, the chapter aims to empower readers with a robust foundation for confidently tackling the challenges of ML engineering, regardless of their chosen tools, encouraging further exploration and self-study in pursuit of a successful career in ML engineering.
+#### 주요 통찰:
+- **ML 프로젝트 조직**: 이 장은 ML 프로젝트를 효과적으로 구조화하고 조직하는 중요성을 강조한다. ML 프로젝트 관리를 위한 프레임워크 역할을 하는 4단계 방법론(발견, 플레이, 개발, 배포)을 제시한다.
+- **개발 방법론**: 애자일, 스크럼, CRISP-DM과 같은 다양한 개발 방법론을 소개한다. 이러한 방법론을 ML 엔지니어링의 고유한 과제에 맞게 적용하는 방법을 이해하는 데 중점을 둔다.
+- **지속적 통합 및 배포**(CI/CD): 이 장은 ML 프로젝트에서 CI/CD 관행을 논의하며 그 중요성을 강조한다. 깃허브 액션과 같은 도구를 사용하여 자동화된 모델 검증을 포함한 CI/CD 파이프라인을 설정하는 방법에 대한 실용적인 지침을 제공한다.
+- **도구 및 버전 제어**: ML 프로젝트 개발 및 버전 제어 전략을 위한 필수 도구를 다룬다. 여기에는 코드 개발, 변경 추적, ML 프로젝트의 효율적인 관리를 위한 도구 설정이 포함된다.
+- **프로젝트 관리 방법론**: 데이터 과학에서 널리 사용되는 CRISP-DM 방법론을 소개한다. 이 방법론을 애자일 및 워터폴과 비교하여 ML 프로젝트에서 언제 어떻게 적용할지에 대한 통찰을 제공한다.
+- **개념의 다양성**: 논의된 원칙이 ML 프로젝트에만 국한되지 않고 다양한 파이썬 소프트웨어 엔지니어링 노력에 적용될 수 있음을 강조한다. 이는 제시된 지식의 더 넓은 적용 가능성을 강조한다.
+- **테스트 및 자동화**: ML 코드 테스트의 중요성과 CI/CD 파이프라인의 일부로 테스트를 자동화하는 방법을 설명한다. 이 개념을 지속적인 모델 성능 테스트 및 지속적인 모델 훈련으로 확장한다.
+- **프로젝트 설정**: 도구 설정, 환경 관리, 데브옵스 및 ML옵스 워크플로에 대한 실용적인 단계가 상세히 설명된다. 독자들은 파이썬 ML 엔지니어링 프로젝트를 준비하는 데 필요한 지식을 갖추게 된다.
 
+### 3장, 모델에서 모델 팩토리까지
+‘모델에서 모델 팩토리까지’라는 제목의 3장은 ML 모델 훈련 및 배포를 표준화, 체계화 및 자동화하는 중요한 과정을 다룬다. 이 장은 반복 가능한 모델 생성 및 검증을 위해 설계된 방법론인 ‘모델 팩토리’의 개념을 소개한다. 프로덕션 시스템을 위한 모델 훈련 및 미세 조정이라는 어려운 작업을 자동화하고 확장하는 것의 중요성을 강조한다. 이 장에서는 ML 모델을 이해하는 데 필요한 기본적인 이론적 개념을 다루고, 다양한 유형의 드리프트 감지를 탐구하며, 모델 재훈련을 트리거하는 기준에 대해 논의한다.
 
-#### Key Insights:
--	**Dynamic Nature of ML** : The chapter highlights how the field of machine learning has evolved significantly in recent years, with the emergence of more powerful modeling techniques, complex technology stacks, and new frameworks. This evolution underscores the importance of staying up-to-date with the latest trends and tools in ML engineering.
--	**ML Engineering Foundation** : The chapter emphasizes the importance of building a strong foundation in ML engineering. It introduces the core topics that readers will explore in the book, such as project management, Python ML package development, and the creation of training and monitoring pipelines. This foundation is crucial for building production-ready ML systems.
--	**Role of ML Teams** : It provides insights into the various roles within ML teams and explains how these roles complement each other. Understanding these roles is essential for assembling well-resourced teams that can effectively tackle ML projects.
--	**Challenges in Real-World ML** : The chapter discusses the challenges of building ML products within real-world organizations. It underscores the need to estimate value reasonably and communicate effectively with stakeholders, highlighting the practical aspects of ML engineering beyond just technical skills.
--	**High-Level System Design** : Readers are introduced to the concept of high-level ML system design for common business problems. This sets the stage for the technical details to be covered in later chapters and provides a glimpse into what ML solutions should look like from a design perspective.
--	**Motivation for Exploration** : The chapter serves as a motivation for readers to engage with the material in the book and encourages them to embark on a path of exploration and self-study. It emphasizes that a solid conceptual foundation is essential for a successful career as an ML engineer.
+이 장은 핵심 질문으로 시작된다: 모델 훈련 및 미세 조정이라는 복잡한 과정을 어떻게 자동화, 재현 및 프로덕션을 위해 확장할 수 있을까? 그리고 다양한 ML 모델 훈련에 대한 이론적, 실용적 통찰을 결합한 포괄적인 개요를 제공한다. 모델 성능 드리프트 개념에 의해 추진되는 모델 재훈련의 동기를 설명한다. 또한 ML 작업의 중요한 측면인 특징 공학을 다루고, ML의 핵심에 있는 최적화 문제를 설명한다. 수동 모델 정의, 초매개변수 튜닝 및 **자동화된 ML**(오토ML)과 같은 최적화 문제를 해결하기 위한 다양한 도구를 제시한다. 또한 모델 관리를 위한 MLflow API 활용 방법을 안내하고 모델 훈련 단계를 간소화하기 위한 파이프라인의 개념을 소개한다. 궁극적으로 이 장은 이러한 구성 요소를 통합 솔루션으로 조립하는 방법을 이해하기 위한 기초를 마련하여 패키징 및 배포에 관한 후속 장을 위한 발판을 마련한다.
 
-### Chapter 02, The Machine Learning Development Process
-Chapter 2, "The Machine Learning Development Process," is a comprehensive exploration of organizing and executing successful ML engineering projects. It begins by discussing various development methodologies like Agile, Scrum, and CRISP-DM. The chapter introduces a project methodology developed by the author, which is referred to throughout the book. It also covers essential concepts like **continuous integration/continuous deployment** (**CI/CD**) and developer tools. The chapter's central focus is on delineating how to divide the work for a prosperous ML software engineering project, offering insights into the process, workflow, and necessary tools, accompanied by real ML code examples. It places a particular emphasis on the "four-step" methodology proposed by the author, encompassing the steps of discovery, playing, development, and deployment, comparing it with the popular CRISP-DM methodology in data science.
+#### 주요 통찰:
+- **모델 팩토리 개념**: 이 장은 ‘모델 팩토리’의 개념을 소개하며, 모델 훈련 및 배포에 대한 체계적이고 자동화된 접근 방식의 필요성을 강조한다. 이 접근 방식은 프로덕션 시스템을 위한 과정을 반복 가능하고 확장 가능하게 만드는 것을 목표로 한다.
+- **드리프트에 대한 모델 재훈련**: 모델 성능 드리프트 현상으로 인한 모델 재훈련의 중요성을 강조한다. ML 모델은 영원히 좋은 성능을 내지 않으며, 시간이 지남에 따라 효과를 유지하기 위해 재훈련이 필수적이다.
+- **특징 공학**: ML 작업에서 특징 공학의 중요한 역할을 탐구한다. 특징 공학은 원시 데이터를 ML 모델이 효과적으로 이해하고 학습할 수 있는 형식으로 변환하는 것을 포함한다.
+- **모델 훈련 이해**: 독자들은 ML 모델 훈련의 기술적 세부 사항에 대한 통찰을 얻으며, ML 모델이 어떻게 학습하는지에 대한 심층적인 분석을 포함한다. 이 장은 모델 훈련의 복잡성을 이해하기 쉬운 구성 요소로 분해한다.
+- **모델 훈련 자동화**: 수동 모델 정의에서 초매개변수 튜닝 및 오토ML까지, 모델 훈련 과정을 자동화하기 위한 다양한 추상화 수준에 대해 논의한다. 이러한 작업을 위한 라이브러리 및 도구 예제를 제공한다.
+- **드리프트 감지**: ML 모델과 사용되는 데이터가 시간이 지남에 따라 어떻게 발전하는지 모니터링하는 드리프트 감지 개념을 다룬다. Alibi Detect 및 Evidently와 같은 패키지를 사용한 드리프트 감지의 실용적인 예를 포함한다.
+- **모델 지속성**: 프로덕션 시스템에서 모델을 저장하고 제공하는 데 중요한 ML 모델의 지속성을 다룬다.
+- **MLflow 모델 레지스트리**: ML 모델의 스테이징을 프로그래밍 방식으로 관리하기 위한 MLflow의 모델 레지스트리 사용을 소개한다.
+- **훈련 파이프라인 정의**: 사이킷런 및 스파크 ML과 같은 라이브러리를 사용하여 훈련 파이프라인을 정의하는 방법을 설명한다. 파이프라인은 모델 훈련 워크플로를 구성하고 자동화하는 데 필수적이다.
+- **배포를 위한 기초**: 이 장은 ML 모델을 효과적으로 패키징하고 배포하는 방법을 이해하기 위한 견고한 기초를 확립하여 후속 장을 위한 무대를 마련한다.
 
-The chapter provides detailed guidance on setting up tools, version control strategies, CI/CD for ML projects, and potential execution environments for ML solutions. By the chapter's end, readers are well-prepared for Python ML engineering projects, laying the foundation for subsequent chapters. Additionally, it highlights that the concepts discussed here can be applied not only to ML projects but also to other Python software engineering endeavors, emphasizing the versatility of the knowledge presented. Overall, this chapter establishes a robust groundwork for the development and deployment of ML solutions while offering a broader perspective on software engineering practices in Python.
+### 4장, 패키징
+4장 ‘패키징’은 파이썬에서의 프로그래밍 실용적 측면, 특히 ML을 포함한 여러 프로젝트에서 재사용하기 위해 코드를 효과적으로 작성하고 패키징하는 방법에 중점을 둔다. 여기서 논의되는 기술과 방법론이 ML 프로젝트 수명 주기 전반에 걸쳐 다양한 파이썬 개발 활동에 적용될 수 있음을 강조한다. 이 장은 기본적인 파이썬 프로그래밍 개념을 복습하는 것으로 시작하여 코딩 표준, 품질 코드 작성, 파이썬에서의 객체 지향 및 함수형 프로그래밍 간의 차이점을 다룬다. 또한 개발 과정에서 테스트, 로깅, 오류 처리 및 바퀴를 재발명하지 않는 것의 중요성을 강조한다. 이 장은 코드를 다양한 플랫폼과 사용 사례에 걸쳐 패키징하고 배포하는 방법에 대한 통찰을 제공한다.
 
-#### Key Insights:
--	**Organizing ML Projects** : The chapter emphasizes the importance of structuring and organizing ML projects effectively. It outlines a four-step methodology (Discover, Play, Develop, Deploy) that serves as a framework for managing ML projects.
--	**Development Methodologies** : It introduces various development methodologies such as Agile, Scrum, and CRISP-DM. The focus is on understanding how these methodologies can be adapted to suit the unique challenges of ML engineering.
--	**Continuous Integration and Deployment** (**CI/CD**): The chapter discusses CI/CD practices, highlighting their significance in ML projects. It provides practical guidance on setting up CI/CD pipelines, including automated model validation, using tools like GitHub Actions.
--	**Tooling and Version Control** : It covers essential tools for ML project development and version control strategies. This includes setting up tools for code development, change tracking, and managing ML projects efficiently.
--	**Project Management Methodologies** : The chapter introduces the CRISP-DM methodology, widely used in data science. It compares this methodology with Agile and Waterfall, offering insights into when and how to apply them in ML projects.
--	**Versatility of Concepts** : It underscores that the principles discussed are not limited to ML projects alone but can be applied to various Python software engineering endeavors. This highlights the broader applicability of the knowledge presented.
--	**Testing and Automation** : The chapter delves into the importance of testing ML code and how to automate testing as part of CI/CD pipelines. It extends the concept to continuous model performance testing and continuous model training.
--	**Project Setup** : Practical steps for setting up tools, environment management, and DevOps and MLOps workflows are detailed. Readers are equipped with the knowledge needed to prepare for Python ML engineering projects.
+이 장은 본질적으로 ML 솔루션을 위한 파이썬 패키지를 만들 때 모범 사례에 대한 가이드 역할을 한다. 파이썬 프로그래밍의 핵심 원칙, 코딩 표준 및 고품질 코드를 보장하기 위한 다양한 기술을 다룬다. 논의는 배포를 위한 코드 패키징, 테스트 및 강력한 오류 처리로 확장된다. 이 장은 노력을 중복하기보다는 기존 기능을 재사용하는 중요성을 강조하며 마무리된다. 배포에 관한 다음 장을 위한 무대를 마련하면서, 독자들에게 적절한 인프라와 도구에 코드를 배포하기 위한 준비에 필요한 지식을 제공한다.
 
-### Chapter 03, From Model to Model Factory
-Chapter 3, titled "From Model to Model Factory," dives into the critical process of standardizing, systematizing, and automating ML model training and deployment. The chapter introduces the concept of the "model factory," a methodology designed for repeatable model creation and validation. It underscores the importance of automating and scaling the challenging task of model training and fine-tuning for production systems. The chapter covers fundamental theoretical concepts necessary for understanding ML models, explores various types of drift detection, and discusses criteria for triggering model retraining.
+#### 주요 통찰:
+- **코딩 모범 사례**: 이 장은 파이썬에서의 코딩 모범 사례의 중요성을 강조한다. ML 작업을 포함한 특정 프로젝트에 관계없이 가독성과 유지 관리가 용이한 깨끗하고 고품질의 코드를 작성해야 할 필요성을 강조한다.
+- **코딩 표준**: 코딩 표준과 지침을 준수하는 중요성에 대해 논의한다. 종종 린터와 같은 도구를 통해 강제되는 코드 스타일과 구조의 일관성은 코드 품질과 협업에 기여한다.
+- **객체 지향 대 함수형 프로그래밍**: 파이썬에서의 객체 지향 및 함수형 프로그래밍 패러다임 간의 차이점을 탐구한다. ML 프로젝트에서 각 접근 방식을 효과적으로 활용할 수 있는 방법에 대해 논의한다.
+- **패키지 개발**: 여러 플랫폼과 프로젝트에서 재사용하기 위한 코드 패키징 과정을 다룬다. 독자들은 메이크파일과 포어트리를 포함한 코드 패키징을 위한 다양한 도구와 설정에 대해 배운다.
+- **테스트 및 오류 처리**: 이 장은 강력한 테스트, 로깅 및 오류 처리의 중요성을 강조한다. 이는 올바르게 기능할 뿐만 아니라 문제가 발생할 때 진단 가능한 코드의 필수 구성 요소이다.
+- **중복 방지**: 바퀴를 재발명하지 않는 원칙을 강조한다. 파이썬 생태계에 이미 존재하는 기능을 재창조하는 대신, 개발자는 작업을 간소화하기 위해 기존 라이브러리와 패키지를 활용해야 한다.
+- **배포 준비**: 이 장은 배포를 위한 코드 준비에 대한 기본 가이드 역할을 한다. 적절한 인프라와 도구에 스크립트, 패키지, 라이브러리 및 앱을 배포하는 데 중점을 둘 다음 장을 위한 기초를 마련한다.
 
-The chapter begins by emphasizing the central question: How can the intricate process of model training and fine-tuning be automated, reproduced, and scaled for production? It proceeds to provide a comprehensive overview of training different ML models, combining both theoretical and practical insights. The motivation for model retraining, driven by the concept of model performance drift, is elucidated. Additionally, the chapter delves into feature engineering, a crucial aspect of ML tasks, and explains the optimization problems at the heart of ML. It presents various tools for tackling these optimization problems, such as manual model definition, hyperparameter tuning, and **automated ML** (**AutoML**). The chapter also guides readers on interfacing with MLflow APIs for model management and introduces the concept of pipelines to streamline model training steps. Ultimately, the chapter lays the groundwork for understanding how to assemble these components into a cohesive solution, setting the stage for subsequent chapters on packaging and deployment.
+### 5장, 배포 패턴과 도구
+5장 ‘배포 패턴과 도구’는 ML 솔루션을 실제 프로덕션 환경에 배포하는 중요한 과정을 다룬다. 이 장은 ML 모델 개발과 실용적 구현 사이의 다리 역할을 한다. 개념 증명에서 확장 가능하고 영향력 있는 ML 솔루션으로 전환하는 과정의 과제와 중요성을 강조한다. 이 장은 시스템 설계 및 아키텍처와 관련된 기본 개념에 중점을 두고 시작하여 쉽게 확장하고 확장할 수 있는 솔루션을 구축하는 방법에 대한 통찰을 제공한다. 그런 다음 컨테이너화의 개념과 특정 인프라에서 애플리케이션 코드를 추상화하여 이식성을 향상시키는 역할을 소개한다. AWS에 ML 마이크로서비스를 배포하는 실용적인 예가 제시된다. 이 장은 이후 이전 장에서의 논의를 확장하여 엔드투엔드 ML 솔루션을 위한 견고한 파이프라인 구축 주제로 돌아간다. ML 파이프라인 구축 및 오케스트레이션을 위한 도구로 아파치 에어플로, 젠ML 및 쿠브플로를 소개하여 독자들에게 배포 가능성에 대한 포괄적인 이해를 제공한다.
 
-#### Key Insights:
--	**The Model Factory Concept** : The chapter introduces the concept of the "model factory," emphasizing the need for a systematic and automated approach to model training and deployment. This approach aims to make the process repeatable and scalable for production systems.
--	**Model Retraining for Drift** : It highlights the importance of model retraining due to the phenomenon of model performance drift. ML models won't perform well indefinitely, and retraining is essential to maintain their effectiveness over time.
--	**Feature Engineering** : The chapter explores the critical role of feature engineering in ML tasks. Feature engineering involves transforming raw data into a format that ML models can understand and learn from effectively.
--	**Understanding Model Training** : Readers gain insights into the technical details of training ML models, including an in-depth look at how ML models learn. The chapter breaks down the complexity of model training into comprehensible components.
--	**Automating Model Training** : It discusses various levels of abstraction for automating the model training process, from manual model definition to hyperparameter tuning and AutoML. Examples of libraries and tools for these tasks are provided.
--	**Drift Detection** : The chapter covers the concept of drift detection, which involves monitoring how ML models and the data they use evolve over time. It includes practical examples of drift detection using packages like Alibi Detect and Evidently.
--	Model Persistence** : It addresses the persistence of ML models, which is crucial for saving and serving models in production systems.
--	**MLflow Model Registry** : The chapter introduces the use of MLflow's Model Registry for programmatically managing the staging of ML models.
--	**Defining Training Pipelines** : It explains how to define training pipelines using libraries like Scikit-Learn and Spark ML. Pipelines are essential for organizing and automating the model training workflow.
--	**Foundation for Deployment** : The chapter establishes a solid foundation for understanding how to package and deploy ML models effectively, setting the stage for subsequent chapters.
+이 장은 독자들에게 ML 솔루션을 효과적으로 배포하는 복잡성을 탐색하는 데 필요한 지식과 도구를 제공한다. 시스템 아키텍처, 컨테이너화, 클라우드 배포 및 파이프라인 오케스트레이션과 관련된 핵심 개념을 다룬다. 이 장이 끝날 무렵, 독자들은 다양한 소프트웨어 도구를 사용하여 복잡한 ML 솔루션을 배포하고 오케스트레이션하는 능력에 자신감을 얻게 된다. 이 장은 ML 모델을 실제 가치를 창출할 수 있는 영향력 있는 프로덕션 준비 시스템으로 전환하는 실용적인 측면을 강조한다.
 
-### Chapter 04, Packaging Up
-Chapter 4, "Packaging Up," delves into the practical aspects of programming in Python, specifically focusing on how to code effectively and package your code for reuse across multiple projects, including those involving ML. It emphasizes that the techniques and methodologies discussed can be applied to various Python development activities throughout an ML project's life cycle. The chapter begins with a recap of fundamental Python programming concepts and moves on to address coding standards, quality code writing, and the distinction between object-oriented and functional programming in Python. It also highlights the importance of testing, logging, error handling, and not reinventing the wheel in the development process. The chapter offers insights into how to package and distribute your code across different platforms and use cases.
+#### 주요 통찰:
+- **배포 과제**: 이 장은 ML 솔루션 배포가 ML 개발 수명 주기에서 어렵지만 중요한 단계임을 강조한다. 성공적인 배포는 가치 창출과 단순한 과대광고 사이의 차이를 만들 수 있다.
+- **시스템 설계 및 아키텍처**: ML 시스템을 효과적으로 설계하고 아키텍처링하는 중요성을 강조한다. 원활하게 확장하고 확장할 수 있는 솔루션을 개발하는 방법을 이해하는 것은 배포의 기본적인 측면이다.
+- **컨테이너화**: 이 장은 핵심 개념으로 컨테이너화를 소개한다. 컨테이너화가 애플리케이션 코드를 특정 인프라에서 추상화하여 다양한 환경에서 이식성을 가능하게 하는 방법을 설명한다.
+- **AWS 마이크로서비스 배포**: 실용적인 예는 AWS에 ML 마이크로서비스를 배포하는 방법을 보여준다. 이는 독자들에게 클라우드 기반 ML 배포의 실용적인 측면에 대한 통찰을 제공한다.
+- **파이프라인 오케스트레이션**: 이전 장에 이어, 파이프라인 오케스트레이션에 대한 논의가 계속된다. 데이터 엔지니어링, ML 및 ML옵스 파이프라인을 오케스트레이션하기 위한 도구로 아파치 에어플로, 젠ML 및 쿠브플로가 소개된다.
+- **확장성**: 이 장은 대용량 데이터와 고처리량 계산을 처리하기 위한 ML 솔루션 확장을 위한 무대를 마련하며, ML 확장성에 대한 향후 고려 사항을 암시한다.
+- **실용적 응용**: 이 장 전반에 걸쳐 배포 개념과 도구의 실용적인 응용이 강조되어, 독자들이 실제 ML 프로젝트에서 지식을 효과적으로 적용할 수 있도록 한다.
+- **가치 창출**: 성공적인 배포는 ML 개발과 고객이나 동료에게 실제 가치 창출 사이의 다리로 프레임된다. 배포 단계는 ML 솔루션이 실질적인 영향을 미치는 곳임을 강조한다.
 
-This chapter essentially serves as a guide to best practices when creating Python packages for ML solutions. It covers key principles of Python programming, coding standards, and various techniques to ensure high-quality code. The discussion extends to packaging code for distribution, testing, and robust error handling. The chapter culminates by stressing the significance of reusing existing functionality rather than duplicating efforts. As it sets the stage for the next chapter on deployment, it equips readers with the necessary knowledge to prepare their code for deployment on appropriate infrastructure and tools.
+### 6장, 스케일링
+6장 ‘스케일링’은 대규모 데이터셋과 고빈도 계산을 처리할 수 있는 ML 솔루션 개발이라는 중요한 과제를 다룬다. 초기 탐색과 개념 증명을 위해 작은 규모에서 간단한 ML 모델을 실행하는 것이 적합하지만, 대량의 데이터나 수많은 모델을 다룰 때는 불충분하다는 점을 인식한다. 이 장은 아파치 스파크와 레이 프레임워크를 소개하고, 내부 작동 방식과 확장 가능한 ML 솔루션에 활용하는 방법을 설명한다. 이러한 시나리오에서 다른 접근 방식, 사고방식, 그리고 도구 세트를 채택하는 것의 중요성을 강조한다. 실용적인 예제는 대량의 데이터 처리를 위한 이러한 프레임워크의 사용을 보여주며, 추론 엔드포인트 확장을 위한 서버리스 애플리케이션과 쿠버네티스를 사용한 컨테이너화된 ML 애플리케이션도 소개한다. 이 장은 독자들에게 대규모 데이터셋을 효과적으로 처리하기 위해 ML 솔루션을 확장하는 데 필요한 지식과 도구를 제공한다.
 
-#### Key Insights:
--	**Coding Best Practices** : The chapter emphasizes the importance of coding best practices in Python. It highlights the need for writing clean, high-quality code that is both readable and maintainable, regardless of the specific project, including ML tasks.
--	**Coding Standards** : It discusses the significance of adhering to coding standards and guidelines. Consistency in code style and structure, often enforced through tools like linters, contributes to code quality and collaboration.
--	**Object-Oriented vs. Functional Programming** : The chapter explores the differences between object-oriented and functional programming paradigms in Python. It discusses where each approach can be leveraged effectively in ML projects.
--	**Package Development** : It delves into the process of packaging code for reuse across multiple platforms and projects. Readers learn about various tools and setups for packaging code, including Makefiles and Poetry.
--	**Testing and Error Handling** : The chapter underscores the importance of robust testing, logging, and error handling. These are essential components of code that not only function correctly but are also diagnosable when issues arise.
--	**Avoiding Redundancy** : It emphasizes the principle of not reinventing the wheel. Instead of recreating functionality that already exists in the Python ecosystem, developers should leverage existing libraries and packages to streamline their work.
--	**Preparation for Deployment** : The chapter serves as a foundational guide for preparing code for deployment. It lays the groundwork for the next chapter, which will focus on deploying scripts, packages, libraries, and apps on appropriate infrastructure and tools.
+이 장의 핵심 내용은 분산 컴퓨팅을 위한 아파치 스파크와 레이 프레임워크에 대한 심층적인 이해, 코딩 패턴과 구문을 포함하여, 확장 가능한 ML 워크플로를 위한 **사용자 정의 함수**(UDF)의 중요성, 그리고 서버리스 아키텍처, 컨테이너화, 레이를 사용한 병렬 컴퓨팅을 통한 ML 솔루션 확장에 대한 통찰이다. 이 장은 딥러닝 모델과 대규모 언어 모델을 포함한 ML 모델 확장에 대한 향후 논의를 위한 무대를 마련하고, 이 장에서 다루는 확장 개념이 책의 나머지 부분에 중요함을 강조한다.
 
-### Chapter 05, Deployment Patterns and Tools
-Chapter 5, "Deployment Patterns and Tools," delves into the crucial process of deploying ML solutions into real-world production environments. This chapter serves as a bridge between the development of ML models and their practical implementation. It highlights the challenges and importance of transitioning from proof-of-concept to scalable and impactful ML solutions. The chapter begins by focusing on fundamental concepts related to system design and architecture, providing insights into how to build solutions that can be easily scaled and extended. It then introduces the concept of containerization and its role in abstracting application code from specific infrastructure, enhancing portability. A practical example of deploying an ML microservice on AWS is presented. The chapter subsequently returns to the topic of building robust pipelines for end-to-end ML solutions, expanding on the discussion from the previous chapter. It introduces tools like Apache Airflow, ZenML, and Kubeflow for building and orchestrating ML pipelines, offering readers a comprehensive understanding of deployment possibilities.
+#### 주요 통찰:
+- **대규모 데이터의 과제**: 이 장은 작은 데이터셋에서 간단한 머신러닝 모델을 실행하는 제한점을 인정하고 대용량 데이터와 고빈도 계산을 다루는 과제를 강조한다.
+- **확장성의 중요성**: 대규모 데이터셋이나 수많은 모델을 처리하기 위해 ML 솔루션을 확장할 때 다른 접근 방식과 도구 세트를 채택하는 것의 중요성을 강조한다.
+- **아파치 스파크와 레이**: 이 장은 분산 컴퓨팅을 위한 두 가지 인기 있는 프레임워크인 아파치 스파크와 레이에 대한 자세한 탐구를 제공한다. 코딩 패턴, 구문 및 확장 가능한 ML 워크플로를 위한 UDF 사용을 다룬다.
+- **클라우드 기반 확장**: 독자들은 특히 AWS Elastic MapReduce(EMR)를 통해 클라우드에서 아파치 스파크를 사용하여 ML 솔루션을 확장하는 방법에 대한 통찰을 얻는다.
+- **서버리스 아키텍처**: 이 장은 서버리스 아키텍처의 개념을 소개하고 AWS Lambda를 사용하여 확장성을 강조하면서 ML 모델 서빙 서비스를 구축하는 방법을 보여준다.
+- **컨테이너화 및 쿠버네티스**: 컨테이너화와 쿠버네티스를 사용한 ML 파이프라인의 수평 확장에 대해 논의하며, 이러한 도구의 이점과 실시간 워크로드에서의 역할에 대한 개요를 제공한다.
+- **레이 병렬 컴퓨팅**: 독자들은 레이 병렬 컴퓨팅 프레임워크와 이기종 클러스터에서 계산을 확장하여 ML 워크플로를 강화하는 능력에 대해 배운다.
+- **향후 장 준비**: 이 장은 딥러닝 모델을 포함한 ML 모델 확장에 대한 앞으로의 논의를 위한 무대를 마련하고, 이 장에서 다루는 확장 개념이 책의 나머지 부분에 중요함을 강조한다.
+- **확장의 전제 조건**: 이 장에서 논의된 지식과 기술이 후속 장에서 제시된 개념을 이해하고 효과적으로 활용하기 위한 전제 조건임을 강조한다.
 
-This chapter equips readers with the knowledge and tools necessary to navigate the complexities of deploying ML solutions effectively. It covers key concepts related to system architecture, containerization, cloud deployment, and pipeline orchestration. By the end of the chapter, readers gain confidence in their ability to deploy and orchestrate complex ML solutions using a variety of software tools. The chapter emphasizes the practical aspects of turning ML models into impactful, production-ready systems that can generate real value.
+### 7장, 딥러닝, 생성형 AI, LLM옵스
+7장 ‘딥러닝, 생성형 AI, LLM옵스’에서는 빠르게 진화하는 머신러닝과 인공지능의 영역을 탐구한다. 생성형 인공지능(생성형 AI 또는 GenAI) 도구와 ChatGPT, Bing AI, Google Bard, DALL-E와 같은 LLM의 확산으로 ML과 AI 영역에서 일어난 심오한 변화를 인정한다. 이 장은 열망하는 ML 엔지니어들이 이 역동적인 환경을 효과적으로 탐색하는 데 필요한 핵심 개념과 기초에 대한 포괄적인 이해를 제공하여 이 용감한 새로운 세계를 안내하는 것을 목표로 한다.
 
-#### Key Insights:
--	**Deployment Challenges** : The chapter underscores that deploying ML solutions is a challenging but crucial step in the ML development lifecycle. Successful deployment can make the difference between creating value and mere hype.
--	**System Design and Architecture** : It emphasizes the significance of designing and architecting ML systems effectively. Understanding how to develop solutions that can be seamlessly scaled and extended is a fundamental aspect of deployment.
--	**Containerization** : The chapter introduces containerization as a key concept. It explains how containerization abstracts application code from specific infrastructure, enabling portability across various environments.
--	**AWS Microservice Deployment** : A practical example demonstrates how to deploy an ML microservice on AWS. This offers readers insight into the practical aspects of cloud-based ML deployment.
--	**Pipeline Orchestration** : Building on the previous chapter, the discussion on pipeline orchestration continues. Tools like Apache Airflow, ZenML, and Kubeflow are introduced for orchestrating data engineering, ML, and MLOps pipelines.
--	**Scalability**: The chapter sets the stage for scaling ML solutions to handle large volumes of data and high-throughput calculations, hinting at future considerations for ML scalability.
--	**Practical Application** : Throughout the chapter, the practical application of deployment concepts and tools is highlighted, ensuring that readers can apply their knowledge effectively in real-world ML projects.
--	**Value Creation**: Successful deployment is framed as the bridge between ML development and creating real value for customers or colleagues. It emphasizes that the deployment phase is where ML solutions have a tangible impact.
+이 장은 딥러닝의 근본적인 알고리즘적 접근 방식을 재검토하는 것으로 시작하여 이론적 기반을 탐구하고 딥러닝 모델을 구축하고 호스팅하는 방법에 대한 통찰을 제공한다. 그런 다음 생성형 AI, 특히 ChatGPT와 같은 LLM으로 초점을 이동한다. 이러한 강력한 텍스트 모델 뒤의 작동 방식과 접근 방식을 깊이 탐구하여 그들이 가져오는 고유한 과제와 기회를 이해하기 위한 무대를 마련한다. 또한 이 장은 LLM옵스의 개념을 소개하고, ML 엔지니어링과 ML옵스 원칙이 LLM에 어떻게 적용될 수 있는지 강조하며, 이 영역에서 모범 사례의 초기 상태를 강조한다. 전반적으로 이 장은 독자들에게 딥러닝, 생성형 AI, LLM 및 진화하는 LLM옵스 분야에 대한 강력한 기반을 제공하여 이 변혁적인 환경을 자신있게 탐색할 수 있도록 한다.
 
-### Chapter 06, Scaling Up
-Chapter 6, "Scaling Up," addresses the critical challenge of developing ML solutions that can handle large datasets and high-frequency computations. It recognizes that while running simple ML models on a small scale is suitable for initial exploration and proof of concept, it's inadequate when dealing with massive volumes of data or numerous models. The chapter introduces Apache Spark and Ray frameworks, explaining their inner workings and how to leverage them for scalable ML solutions. It emphasizes the importance of adopting a different approach, mindset, and toolkit for such scenarios. Practical examples illustrate the use of these frameworks for processing large batches of data, and there's an introduction to serverless applications for scaling inference endpoints and containerized ML applications with Kubernetes. The chapter equips readers with the knowledge and tools needed to scale ML solutions to handle larger datasets effectively.
+#### 주요 통찰:
+- **AI와 ML의 빠른 진화**: 이 장은 AI와 ML 분야의 빠른 발전 속도를 강조한다. ChatGPT와 같은 생성형 AI와 LLM의 도입을 인정하여 AI 기술의 지속적인 혁신과 성장을 반영한다.
+- **기초 지식**: 핵심 AI 및 ML 개념에 대한 강력한 기반을 구축하는 것의 중요성을 강조한다. 독자들은 딥러닝의 이론적 측면을 안내받아 이러한 기술을 뒷받침하는 기본 원칙에 대한 견고한 이해를 보장한다.
+- **LLM에 대한 초점**: 이 장은 ChatGPT와 같은 LLM에 특별한 주의를 기울이며 AI 환경에서의 중요성을 탐구한다. 설계 원칙, 행동 및 실용적인 응용 프로그램에 대해 논의하여 ML 엔지니어에게 귀중한 통찰을 제공한다.
+- **LLM옵스 소개**: LLM옵스, ML 엔지니어링 및 ML옵스를 LLM에 적용하는 것은 신흥 분야로 소개된다. 이 장은 핵심 구성 요소와 신흥 모범 사례를 설명하며, 이 영역이 여전히 진화 중임을 강조한다.
+- **실제 응용을 위한 준비**: 딥러닝, 생성형 AI 및 LLM에 대한 깊은 이해를 제공함으로써, 이 장은 ML 엔지니어들에게 이러한 기술의 실제 응용을 준비시킨다. 프로젝트에서 AI와 ML의 잠재력을 효과적으로 활용할 수 있도록 준비시킨다.
+- **학습 사고방식 육성**: 이 장은 AI와 ML 환경이 지속적으로 발전하고 있음을 강조한다. ML 엔지니어들은 빠른 발전을 따라가고 분야의 성장에 기여하기 위해 학습 사고방식을 채택하도록 권장된다.
 
-The key takeaways from this chapter are a deeper understanding of Apache Spark and Ray frameworks for distributed computing, including coding patterns and syntax, the significance of **User-Defined Functions** (**UDFs**) for scalable ML workflows, and insights into scaling ML solutions through serverless architectures, containerization, and parallel computing with Ray. The chapter sets the stage for future discussions on scaling ML models, particularly deep learning models and large language models, and emphasizes the importance of these scaling concepts for the rest of the book.
+### 8장, 예제 ML 마이크로서비스 구축
+8장 ‘ML 마이크로서비스 예제 구축’은 책 전체에서 다룬 개념과 기술의 실용적인 결정체 역할을 한다. 이전에 얻은 지식을 통합하여 FastAPI, 도커, 쿠버네티스와 같은 도구를 사용하여 예측 솔루션을 위한 머신러닝 마이크로서비스를 만드는 데 중점을 둔다.
 
-#### Key Insights:
--	**Challenges of Large-Scale Data** : The chapter acknowledges the limitations of running simple machine learning models on small datasets and highlights the challenges of dealing with large volumes of data and high-frequency computations.
--	**Importance of Scalability** : It underscores the importance of adopting a different approach and toolkit when scaling up ML solutions to handle massive datasets or numerous models.
--	**Apache Spark and Rayv** : The chapter provides a detailed exploration of two popular frameworks, Apache Spark, and Ray, for distributed computing. It covers coding patterns, syntax, and the use of UDFs for scalable ML workflows.
--	**Cloud-Based Scaling** : Readers gain insights into using Apache Spark on the cloud, specifically through AWS Elastic MapReduce (EMR), to scale ML solutions.
--	**Serverless Architectures** : The chapter introduces the concept of serverless architectures and demonstrates how to build an ML model serving services using AWS Lambda, emphasizing scalability.
--	**Containerization and Kubernetes** : It discusses horizontal scaling of ML pipelines using containerization and Kubernetes, providing an overview of these tools' benefits and their role in real-time workloads.
--	**Ray Parallel Computing** : Readers learn about the Ray parallel computing framework and its ability to scale compute on heterogeneous clusters for supercharging ML workflows.
--	**Preparation for Future Chapters** : The chapter sets the stage for upcoming discussions on scaling deep learning models, including LLMs, and highlights the importance of the scaling concepts covered in this chapter for the rest of the book.
--	**Prerequisites for Scaling** : It emphasizes that the knowledge and techniques discussed in this chapter are prerequisites for understanding and effectively utilizing the concepts presented in subsequent chapters.
+이 장은 예측 문제를 소개하면서 시작하여 시나리오를 이해하고 이를 해결하기 위한 주요 결정을 내리는 것의 중요성을 강조한다. 그런 다음 예측 서비스의 설계를 심층적으로 살펴보며, 실제 ML 엔지니어링 프로젝트에서 발생할 수 있는 복잡성을 강조한다. 작업 적합성 및 개발자 친숙도와 같은 요소를 고려하여 적절한 도구 선택에 대해 논의한다. 이 장은 계속해서 대규모 훈련, FastAPI를 사용한 모델 제공, 쿠버네티스에 솔루션 컨테이너화 및 배포를 다룬다. 각 주제는 독자들에게 자신의 ML 마이크로서비스 프로젝트에서 유사한 과제를 해결하기 위한 귀중한 참고 자료가 되는 실용적인 안내를 제공한다. 이 장의 끝까지 독자들은 책 전체에서 습득한 도구와 기술을 활용하여 다양한 비즈니스 문제에 대해 강력한 ML 마이크로서비스를 구축하는 방법에 대한 명확한 이해를 얻으며, 이론과 실제 적용 사이의 간극을 좁힌다.
 
-### Chapter 07, Deep Learning, Generative AI, and LLMOps
-In Chapter 7, "Deep Learning, Generative AI and LLMOps," the book delves into the rapidly evolving landscape of machine learning and artificial intelligence. It acknowledges the profound changes in the ML and AI realms, with the proliferation of generative artificial intelligence (generative AI or GenAI) tools and large LLMs like ChatGPT, Bing AI, Google Bard, and DALL-E. The chapter aims to guide aspiring ML engineers through this dynamic landscape, providing a comprehensive understanding of the core concepts and foundations necessary to navigate this brave new world effectively.
+#### 주요 통찰:
+- **현실적인 문제 해결**: 이 장은 솔루션을 설계하기 전에 비즈니스 문제를 철저히 이해하는 것의 중요성을 보여준다. 종종 동적으로 트리거되는 예측 알고리즘을 포함하는 문제 요구 사항에 부합하는 정보에 입각한 결정을 내려야 할 엔지니어의 필요성을 강조한다.
+- **도구 선택**: 실제 ML 문제를 해결하는 데 있어 적절한 도구를 선택하는 것이 중요하다. 이 장은 작업 적합성 및 개발자 친숙도와 같은 요소를 고려하여 도구를 선택하는 기준에 대해 논의한다. 이러한 통찰은 독자들이 ML 솔루션을 구축할 때 정보에 입각한 선택을 할 수 있게 돕는다.
+- **마이크로서비스 아키텍처**: 이 장은 독자들에게 이벤트 처리, 모델 훈련, 저장 및 예측과 같은 ML 솔루션의 다양한 측면을 처리하기 위한 마이크로서비스 아키텍처 설계를 안내한다. 이 아키텍처 접근 방식은 실제 ML 엔지니어링 프로젝트의 복잡성을 해결한다.
+- **실용적 구현**: 대규모 모델 훈련, FastAPI로 모델 서빙, 쿠버네티스에 솔루션 컨테이너화 및 배포에 대한 실용적인 가이드는 독자들에게 ML 엔지니어링 개념과 도구를 적용하여 강력한 마이크로서비스를 구축하는 구체적인 예를 제공한다.
 
-The chapter commences by revisiting the fundamental algorithmic approach of deep learning, exploring its theoretical underpinnings, and offering insights into building and hosting deep learning models. It then shifts its focus to GenAI and, more specifically, LLMs, such as ChatGPT. It deep dives into the workings and approaches behind these powerful text models, setting the stage for understanding the unique challenges and opportunities they bring. Additionally, the chapter introduces the concept of LLMOps, emphasizing how ML engineering and MLOps principles can be applied to LLMs and highlighting the nascent state of best practices in this domain. Overall, this chapter equips readers with a strong foundation in deep learning, GenAI, LLMs, and the evolving field of LLMOps, positioning them to navigate this transformative landscape confidently.
+### 9장, ETML(추출, 변환, 머신러닝) 사례 연구
+9장 ‘ETML(추출, 변환, 머신러닝) 사례 연구’는 배치 처리 ML 시스템의 상세한 예제를 제공하여 책의 교훈을 확장한다. 이 활용 사례는 표준 ML 알고리즘과 LLM 및 LLM옵스를 통합하여 실제 시나리오에서 이러한 개념의 적용을 보여준다. 이 장은 **추출, 변환, 머신러닝**(ETML) 패턴을 사용하여 택시 승차 데이터를 클러스터링하고 컨텍스트 텍스트 데이터에 자연어 처리를 수행하는 것을 중심으로 한다. 솔루션의 의사 결정 과정, 도구 선택 및 실행을 탐구하여 독자들에게 복잡한 배치 ML 엔지니어링 과제를 해결하는 데 대한 실용적인 통찰을 제공한다.
 
-#### Key Insights:
--	**The Rapid Evolution of AI and ML** : The chapter highlights the rapid pace of development in the AI and ML field. It acknowledges the introduction of generative AI and LLMs like ChatGPT, reflecting the ongoing innovation and growth in AI technology.
--	**Foundational Knowledge** : It emphasizes the importance of building a strong foundation in core AI and ML concepts. Readers are guided through the theoretical aspects of deep learning, ensuring they have a solid understanding of the fundamental principles underpinning these technologies.
--	**Focus on LLMs** : The chapter gives special attention to LLMs, such as ChatGPT, and explores their significance in the AI landscape. It discusses their design principles, behaviors, and practical applications, providing valuable insights for ML engineers.
--	**Introduction to LLMOps** : LLMOps, the application of ML engineering and MLOps to LLMs, is introduced as an emerging field. The chapter outlines its core components and emerging best practices, highlighting that this area is still evolving.
--	**Preparation for Real-World Applications** : By offering a deep understanding of deep learning, GenAI, and LLMs, the chapter prepares ML engineers for real-world applications of these technologies. It equips them to harness the potential of AI and ML in their projects effectively.
--	**Nurturing a Learning Mindset** : The chapter emphasizes that the AI and ML landscape is continually evolving. ML engineers are encouraged to adopt a learning mindset to keep up with the rapid advancements and contribute to the field's growth.
+ML 개발 프로세스, 모델 패키징, 배포 패턴 및 아파치 에어플로와 같은 도구를 사용한 오케스트레이션과 같이 이전 장에서 다룬 개념의 통합을 검토함으로써, 독자들은 실제 ML 엔지니어링 프로젝트에 접근하는 방법에 대한 전체적인 이해를 얻는다. 이 장은 ML 엔지니어에게 ETML 패턴을 적용하는 데 필요한 지식과 기술을 제공하여 강력한 배치 처리 ML 솔루션을 구축하는 데 귀중한 자원이 된다.
 
-### Chapter 08, Building an Example ML Microservice
-Chapter 8, "Building an Example ML Microservice," serves as a practical culmination of the concepts and techniques covered throughout the book. It focuses on creating a machine learning microservice for a forecasting solution, using tools like FastAPI, Docker, and Kubernetes to bring together the knowledge acquired earlier.
+#### 주요 통찰:
+- **ETML 패턴**: 이 장은 ML 솔루션에서 일반적인 접근 방식인 ETML 패턴을 소개한다. 배치 처리 방식으로 데이터를 검색, 전처리 및 적용하는 ML 프로젝트를 구조화하는 것의 중요성을 강조한다. ETML은 택시 승차 데이터 클러스터링 및 텍스트 데이터에 대한 NLP 수행과 같은 복잡한 작업을 처리하는 데 도움이 된다.
+- **개념 통합**: 9장은 이전 장에서 배운 개념과 기술을 통합하여 ML 엔지니어가 책 전체에서 얻은 지식을 활용하는 방법을 보여준다. ML 개발 프로세스, 모델 패키징, 배포 패턴 및 아파치 에어플로를 사용한 오케스트레이션 요소를 결합한다. 이 통합은 실제 ML 엔지니어링 과제를 해결하기 위한 포괄적인 접근 방식의 중요성을 강조한다.
+- **고급 도구**: 이 장은 ML 솔루션을 효과적으로 구축하기 위한 도구와 방법론 선택을 다룬다. 복잡한 기능을 위해 사이킷런, AWS boto3, OpenAI API와 같은 라이브러리 사용에 대해 논의한다. 또한 회복력 있는 방식으로 ML 작업을 오케스트레이션하는 방법을 보여주며 아파치 에어플로의 고급 기능을 탐구한다.
+- **실제 문제 해결**: 택시 승차 데이터 클러스터링 및 NLP 적용 예제 시나리오를 통해 이 장은 실용적인 ML 엔지니어링 과제를 해결하는 방법을 보여준다. 비즈니스 요구 사항을 이해하고 이를 기술적 솔루션으로 변환하는 것의 중요성을 강조한다.
+- **책 완성**: 9장은 ML 엔지니어링 분야에서 다룬 다양한 주제를 요약하며 책의 결론을 맺는다. 이 진화하는 분야에서 흥미로운 기회를 수용하도록 독자를 격려하고 ML 엔지니어링 기술에 대한 증가하는 수요를 강조한다.
 
-The chapter begins by introducing the forecasting problem, emphasizing the importance of understanding the scenario and making key decisions to address it. It then delves into the design of the forecasting service, highlighting the complexities that may arise in real-world ML engineering projects. The selection of appropriate tools is discussed, considering factors like task suitability and developer familiarity. The chapter proceeds to cover training at scale, serving models using FastAPI, and containerizing and deploying the solution to Kubernetes. Each topic provides a practical walk-through, offering readers a valuable reference for tackling similar challenges in their own ML microservices projects. By the end of the chapter, readers gain a clear understanding of how to leverage the tools and techniques acquired throughout the book to build robust ML microservices for diverse business problems, bridging the gap between theory and real-world application.
-
-#### Key Insights:
--	**Realistic Problem Solving** : The chapter demonstrates the importance of understanding the business problem thoroughly before designing a solution. It highlights the need for engineers to make informed decisions that align with the problem's requirements, which often involve dynamically triggered forecasting algorithms.
--	**Tool Selection** : A critical aspect of solving real-world ML problems is selecting the right tools for the job. The chapter discusses the criteria for choosing appropriate tools, considering factors like task suitability and developer familiarity. This insight helps readers make informed choices when building ML solutions.
--	**Microservice Architecture** : The chapter guides readers through the design of a microservice architecture to handle various aspects of ML solutions, such as event handling, model training, storage, and predictions. This architectural approach addresses the complexities of real-world ML engineering projects.
--	**Practical Implementation** : The practical walk-through provided for training models at scale, serving models with FastAPI, and containerizing and deploying the solution to Kubernetes offers readers a concrete example of applying ML engineering concepts and tools to build a robust microservice.
-
-### Chapter 09, Building an Extract, Transform, Machine Learning Use Case
-Chapter 9, "Building an Extract, Transform, Machine Learning Use Case," extends the book's lessons by providing a detailed example of a batch-processing ML system. This use case integrates standard ML algorithms with LLMs and LLMOps, demonstrating the application of these concepts in a real-world scenario. The chapter revolves around clustering taxi ride data and performing **natural language processing** (**NLP**) on contextual text data using the **Extract, Transform, Machine Learning** (**ETML**) pattern. It explores the decision-making process, tool selection, and execution of the solution, offering readers practical insights into tackling complex batch ML engineering challenges.
-
-By examining the integration of concepts from previous chapters, such as the ML development process, model packaging, deployment patterns, and orchestration with tools like Apache Airflow, readers gain a holistic understanding of how to approach real-world ML engineering projects. This chapter empowers ML engineers with the knowledge and skills needed to apply ETML patterns, making it an invaluable resource for building robust, batch-processing ML solutions.
-
-#### Key Insights:
--	**ETML Pattern** : The chapter introduces the ETML pattern, which is a common approach in ML solutions. It emphasizes the importance of structuring ML projects to efficiently retrieve, preprocess, and apply machine learning to data in a batch-processing manner. ETML helps in dealing with complex tasks like clustering taxi ride data and performing NLP on textual data.
--	**Integration of Concepts** : Chapter 9 integrates concepts and techniques from earlier chapters, showcasing how ML engineers can leverage the knowledge gained throughout the book. It combines elements from the ML development process, packaging models, deployment patterns, and orchestration using Apache Airflow. This integration highlights the importance of a comprehensive approach to solving real-world ML engineering challenges.
--	**Advanced Tooling** : The chapter delves into the selection of tools and methodologies for building ML solutions effectively. It discusses the use of libraries like Scikit-learn, AWS boto3, and OpenAI APIs for complex functionality. Moreover, it explores advanced features of Apache Airflow, illustrating how to orchestrate ML tasks in a resilient manner.
--	**Real-World Problem Solving** : Through the example scenario of clustering taxi ride data and applying NLP, the chapter demonstrates how to address practical ML engineering challenges. It emphasizes the importance of understanding business requirements and translating them into technical solutions.
--	**Completion of Book** : Chapter 9 marks the conclusion of the book, summarizing the wide range of topics covered in the field of ML engineering. It encourages readers to embrace the exciting opportunities in this evolving field and highlights the growing demand for ML engineering skills.
-
-
-## Software and hardware list
-| Chapter | Software required | Free/Proprietary | Can code testing be performed using a trial? | Cost of the software | Download Links to the software | Hardware specifications | OS required |
+## 소프트웨어 및 하드웨어 목록
+| 장 | 필요한 소프트웨어 | 무료/독점 | 평가판으로 코드 테스트가 가능한가? | 소프트웨어 비용 | 소프트웨어 다운로드 링크 | 하드웨어 사양 | 필요한 OS |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Anaconda (>=v22.0) or Miniconda (>=v22.0) | Free | N/A | N/A | [https://www.anaconda.com/download](https://www.anaconda.com/download) | N/A | MacOS, Windows, or Linux |
-| 2 | • PyCharm or VSCode <br> • Git and GitHub account <br> • Atlassian JIRA <br> • AWS Account | • Proprietary with free version available <br> • Free <br> • Proprietary with free version available <br> • Proprietary with CLI, etc. free | • N/A <br> • N/A <br> • Yes <br> • Yes | • N/A <br> • N/A <br> • N/A <br> • Free tier, followed by pay as you go | • [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download) <br> •[https://code.visualstudio.com/download](https://code.visualstudio.com/download) <br> • [https://www.atlassian.com/git/tutorials/install-git](https://www.atlassian.com/git/tutorials/install-git) <br> • [https://github.com/](https://github.com/) <br> •[https://www.atlassian.com/software/jira](https://www.atlassian.com/software/jira) <br> • [https://aws.amazon.com/](https://aws.amazon.com/) | N/A | MacOS, Windows, or Linux |
-| 3 | • MLFlow <br> • Tensorflow <br> • PyTorch | • Free <br> • Free <br> • Free | • N/A <br> • N/A <br> • Yes <br> • Yes | N/A | • [https://mlflow.org/docs/latest/quickstart.html](https://mlflow.org/docs/latest/quickstart.html) <br> •[https://www.tensorflow.org/install](https://www.tensorflow.org/install) <br> • [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) | N/A | MacOS, Windows, or Linux |
-| 4 |  Make | Free | N/A | N/A | • [https://formulae.brew.sh/formula/make](https://formulae.brew.sh/formula/make) <br> • Linux: Pre-installed <br> • Recommend you work in Windows Subsystem for Linux and then Make should be available  | N/A | MacOS, Windows, or Linux |
-| 5 | • Docker (v20.10) <br> • Kind (>=v0.20) <br> • Kubeflow Pipelines SDK (v1.8) <br> • ZenML (>=0.40) <br> • Apache Airflow (>=v2.6.0)  | Free | N/A | N/A | • [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/) <br> • [https://kind.sigs.k8s.io](https://kind.sigs.k8s.io/) <br> • [https://www.kubeflow.org/docs/started/installing-kubeflow/](https://www.kubeflow.org/docs/started/installing-kubeflow/) <br> • [https://docs.zenml.io/getting-started/installation](https://docs.zenml.io/getting-started/installation) <br> • [https://airflow.apache.org/docs/apache-airflow/stable/installation/](https://airflow.apache.org/docs/apache-airflow/stable/installation/) | N/A | MacOS, Windows, or Linux |
-| 6 | • Apache Spark (>=v3.0) <br> • Ray | • Free <br> • Free | N/A | N/A | • [https://spark.apache.org/downloads.html](https://spark.apache.org/downloads.html) <br> • [https://docs.ray.io/en/latest/ray-overview/installation.html](https://docs.ray.io/en/latest/ray-overview/installation.html)  | N/A | MacOS, Windows, or Linux (beta) |
-| 7 | • OpenAI API Account | Proprietary | Requires an OpenAI account and API key | Model dependent: $0.0015-0.12/1k tokens | [https://openai.com/blog/openai-api](https://openai.com/blog/openai-api) | N/A | MacOS, Windows, or Linux |
-| 8 | • Minikube (v1.30.0) | Free | N/A | N/A | [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)  | N/A | MacOS, Windows, or Linux |
-| 9 | • Apache Airflow (>=v2.6.0) | Free | N/A | N/A | [https://airflow.apache.org/docs/apache-airflow/stable/installation/](https://airflow.apache.org/docs/apache-airflow/stable/installation/)  | N/A | MacOS, Windows, or Linux |
+| 1 | 아나콘다(>=v22.0) 또는 미니콘다(>=v22.0) | 무료 | 해당 없음 | 해당 없음 | [https://www.anaconda.com/download](https://www.anaconda.com/download) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 2 | • 파이참 또는 VS코드 <br> • 깃과 깃허브 계정 <br> • 아틀라시안 JIRA <br> • AWS 계정 | • 무료 버전이 있는 독점 <br> • 무료 <br> • 무료 버전이 있는 독점 <br> • CLI 등 무료인 독점 | • 해당 없음 <br> • 해당 없음 <br> • 예 <br> • 예 | • 해당 없음 <br> • 해당 없음 <br> • 해당 없음 <br> • 무료 티어, 이후 종량제 | • [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download) <br> •[https://code.visualstudio.com/download](https://code.visualstudio.com/download) <br> • [https://www.atlassian.com/git/tutorials/install-git](https://www.atlassian.com/git/tutorials/install-git) <br> • [https://github.com/](https://github.com/) <br> •[https://www.atlassian.com/software/jira](https://www.atlassian.com/software/jira) <br> • [https://aws.amazon.com/](https://aws.amazon.com/) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 3 | • MLFlow <br> • 텐서플로 <br> • 파이토치 | • 무료 <br> • 무료 <br> • 무료 | • 해당 없음 <br> • 해당 없음 <br> • 예 <br> • 예 | 해당 없음 | • [https://mlflow.org/docs/latest/quickstart.html](https://mlflow.org/docs/latest/quickstart.html) <br> •[https://www.tensorflow.org/install](https://www.tensorflow.org/install) <br> • [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 4 | Make | 무료 | 해당 없음 | 해당 없음 | • [https://formulae.brew.sh/formula/make](https://formulae.brew.sh/formula/make) <br> • 리눅스: 미리 설치됨 <br> • 윈도우에서는 WSL에서 작업하면 Make를 사용할 수 있음 | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 5 | • 도커(v20.10) <br> • Kind(>=v0.20) <br> • 쿠브플로 파이프라인 SDK(v1.8) <br> • 젠ML(>=0.40) <br> • 아파치 에어플로(>=v2.6.0) | 무료 | 해당 없음 | 해당 없음 | • [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/) <br> • [https://kind.sigs.k8s.io](https://kind.sigs.k8s.io/) <br> • [https://www.kubeflow.org/docs/started/installing-kubeflow/](https://www.kubeflow.org/docs/started/installing-kubeflow/) <br> • [https://docs.zenml.io/getting-started/installation](https://docs.zenml.io/getting-started/installation) <br> • [https://airflow.apache.org/docs/apache-airflow/stable/installation/](https://airflow.apache.org/docs/apache-airflow/stable/installation/) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 6 | • 아파치 스파크(>=v3.0) <br> • 레이 | • 무료 <br> • 무료 | 해당 없음 | 해당 없음 | • [https://spark.apache.org/downloads.html](https://spark.apache.org/downloads.html) <br> • [https://docs.ray.io/en/latest/ray-overview/installation.html](https://docs.ray.io/en/latest/ray-overview/installation.html) | 해당 없음 | 맥OS, 윈도우 또는 리눅스(베타) |
+| 7 | • OpenAI API 계정 | 독점 | OpenAI 계정과 API 키 필요 | 모델 따라 다름: $0.0015-0.12/1k 토큰 | [https://openai.com/blog/openai-api](https://openai.com/blog/openai-api) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 8 | • 미니큐브(v1.30.0) | 무료 | 해당 없음 | 해당 없음 | [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
+| 9 | • 아파치 에어플로(>=v2.6.0) | 무료 | 해당 없음 | 해당 없음 | [https://airflow.apache.org/docs/apache-airflow/stable/installation/](https://airflow.apache.org/docs/apache-airflow/stable/installation/) | 해당 없음 | 맥OS, 윈도우 또는 리눅스 |
 
+## 컬러 이미지 PDF 다운로드 <img alt="Coding" height="25" width="40" src="https://emergency.com.au/wp-content/uploads/2021/03/free.gif">
 
-## Know more on the Discord server <img alt="Coding" height="25" width="32"  src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif">
-You can get more engaged on the discord server for more latest updates and discussions in the community at [Discord](https://packt.link/mle)
+이 책에 사용된 스크린샷/다이어그램의 컬러 이미지가 포함된 PDF 파일도 제공한다: [그래픽 번들](https://packt.link/LMqir) <img alt="Coding" height="15" width="35" src="https://media.tenor.com/ex_HDD_k5P8AAAAi/habbo-habbohotel.gif">
 
+## 저자 소개
+_앤드류 피터 맥마혼_은 다양한 산업 분야에서 영향력 있는 ML 제품을 구축한 경험이 있다. 현재 영국 내트웨스트 그룹의 ML옵스 책임자이며 임페리얼 칼리지 런던에서 이론 응집 물질 물리학 박사 학위를 받았다. 그는 활발한 블로거, 연사, 팟캐스트 게스트이자 ML옵스 커뮤니티의 주요 인물이다. AI Right 팟캐스트의 공동 진행자이며 2022년 영국 데이터 어워드에서 ‘떠오르는 스타상’을, 2019년 데이터 과학 재단에서 ‘올해의 데이터 과학자상’을 수상했다.
 
-## Download a free PDF <img alt="Coding" height="25" width="40" src="https://emergency.com.au/wp-content/uploads/2021/03/free.gif">
+# 원서
 
-_If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost. Simply click on the link to claim your free PDF._
-[Free-Ebook](https://packt.link/free-ebook/9781837631964) <img alt="Coding" height="15" width="35"  src="https://media.tenor.com/ex_HDD_k5P8AAAAi/habbo-habbohotel.gif">
-
-
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book at [GraphicBundle](https://packt.link/LMqir) <img alt="Coding" height="15" width="35"  src="https://media.tenor.com/ex_HDD_k5P8AAAAi/habbo-habbohotel.gif">
-
-
-## Get to know the Author
-_Andrew Peter McMahon_ has spent years building high-impact ML products across a variety of industries. He is currently Head of MLOps for NatWest Group in the UK and has a PhD in theoretical condensed matter physics from Imperial College London. He is an active blogger, speaker, podcast guest, and leading voice in the MLOps community. He is co-host of the AI Right podcast and was named ‘Rising Star of the Year’ at the 2022 British Data Awards and ‘Data Scientist of the Year’ by the Data Science Foundation in 2019.
-
-
-## Other Related Books
-- [Deep Learning with TensorFlow and Keras – Third Edition](https://www.packtpub.com/product/deep-learning-with-tensorflow-and-keras-third-edition/9781803232911)
-- [Mastering Kubernetes - Fourth Edition](https://www.packtpub.com/product/mastering-kubernetes-fourth-edition/9781804611395)
-
-
-
-# Errata
-
-## Page 52 - Package management (conda and pip)
-In page 52 the text reads :
-_"First, if we want to create a conda environment called mleng with Python version 3.8 installed, we simply execute the following in our terminal:_ 
-```console
-conda env --name mleng python=3.10
-```
-creating a Conda environment called mleng with Python version 3.8, but the command specifies python=3.10.
-To align with the intended version, the correct text should be: 
-
-**First, if we want to create a conda environment called mleng with Python version 3.10 installed**
-
-
-
-
-
-
-
-
-
+- [Machine Learning Engineering with Python 2판](https://www.packtpub.com/product/machine-learning-engineering-with-python-second-edition/9781837631964)
